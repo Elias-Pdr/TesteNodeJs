@@ -3,11 +3,9 @@ console.log('Inicio...');
 const express = require ("express")
 const path = require("path")
 const nodemailer = require('nodemailer')
-require('dotenv').config()
 
 const app = express()
 const router = express.Router()
-
 
 router.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname + "/pages/home.html"))
@@ -19,10 +17,15 @@ router.get("/contato", (req, res)=>{
 
 app.use(router)
 
-
 app.listen(process.env.PORT || 3333, ()=>{
     console.log("SERVIDOR ONLINE");
 })
+
+
+////////////////////////////
+
+
+require('dotenv').config()
 
 const transportador = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
@@ -46,5 +49,5 @@ transportador.sendMail(emailASerEnviado, (err) => {
         return
     }
     console.log('Email enviado!');
-
+    
 })
