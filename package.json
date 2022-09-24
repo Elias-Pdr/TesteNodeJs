@@ -1,7 +1,6 @@
 {
   "name": "teste-de-nodejs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,6 +10,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
-  }
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elias-Pdr/TesteNodeJs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elias-Pdr/TesteNodeJs/issues"
+  },
+  "homepage": "https://github.com/Elias-Pdr/TesteNodeJs#readme",
+  "description": ""
 }
