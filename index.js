@@ -1,5 +1,11 @@
 console.log('Inicio...');
 
+const btn = document.getElementById("btn")
+
+btn.addEventListener("click", function() {
+    document.getElementById("txt").innerHTML = "Hello World";
+});
+
 const express = require ("express")
 const path = require("path")
 const nodemailer = require('nodemailer')
@@ -51,3 +57,4 @@ transportador.sendMail(emailASerEnviado, (err) => {
     console.log('Email enviado!');
     
 })
+
