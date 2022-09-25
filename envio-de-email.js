@@ -1,5 +1,6 @@
-const nodemailer = require("nodemailer")
+/*
 require('dotenv').config()
+const nodemailer = require('nodemailer')
 
 const transportador = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
@@ -13,7 +14,7 @@ const transportador = nodemailer.createTransport({
 const emailASerEnviado = {
     from: 'sheridan71@ethereal.email',
     to: 'purplefire0008@proton.me',
-    subject: 'off',
+    subject: 'opa',
     text: 'foi?'
 }
 
@@ -23,7 +24,7 @@ transportador.sendMail(emailASerEnviado, (err) => {
         return
     }
     console.log('Email enviado!');
-
+    
 })
 
-console.log('...');
+*/

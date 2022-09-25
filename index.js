@@ -1,10 +1,5 @@
+/*
 console.log('Inicio...');
-
-const btn = document.getElementById("btn")
-
-btn.addEventListener("click", function() {
-    document.getElementById("txt").innerHTML = "Hello World";
-});
 
 const express = require ("express")
 const path = require("path")
@@ -31,7 +26,9 @@ app.listen(process.env.PORT || 3333, ()=>{
 ////////////////////////////
 
 
+*/
 require('dotenv').config()
+const nodemailer = require('nodemailer')
 
 const transportador = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
@@ -45,7 +42,7 @@ const transportador = nodemailer.createTransport({
 const emailASerEnviado = {
     from: 'sheridan71@ethereal.email',
     to: 'purplefire0008@proton.me',
-    subject: 'off',
+    subject: 'opa',
     text: 'foi?'
 }
 
